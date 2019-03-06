@@ -1,5 +1,5 @@
 {
-	"name" : "mysql-workbench-schema-exporter/doctrine2-exporter",
+	"name" : "ovk13/doctrine2-exporter",
 	"type" : "library",
 	"description" : "MySQL Workbench Schema Exporter for Doctrine 2",
 	"keywords" : [
@@ -9,21 +9,25 @@
 		"cli",
 		"doctrine"
 	],
-	"homepage" : "https://github.com/mysql-workbench-schema-exporter/doctrine2-exporter",
+	"homepage" : "https://github.com/ovk13/doctrine2-exporter",
 	"license" : "MIT",
 	"authors" : [{
-			"name" : "Johannes Mueller",
-			"email" : "circus2@web.de",
-			"role" : "Developer"
-		}, {
-			"name" : "Toha",
-			"email" : "tohenk@yahoo.com",
-			"role" : "Developer"
-		}, {
-			"name" : "Robert Vock",
-			"email" : "robertvock82@gmail.com",
-			"role" : "Developer"
-		}
+		"name" : "Johannes Mueller",
+		"email" : "circus2@web.de",
+		"role" : "Developer"
+	}, {
+		"name" : "Toha",
+		"email" : "tohenk@yahoo.com",
+		"role" : "Developer"
+	}, {
+		"name" : "Robert Vock",
+		"email" : "robertvock82@gmail.com",
+		"role" : "Developer"
+	}, {
+		"name" : "Vladimir",
+		"email" : "1313torch@gmail.com",
+		"role" : "Developer"
+	}
 	],
 	"require" : {
 		"php" : ">=5.4.0",
