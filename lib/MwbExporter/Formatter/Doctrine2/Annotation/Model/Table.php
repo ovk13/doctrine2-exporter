@@ -311,6 +311,29 @@ class Table extends BaseTable
     }
 
     /**
+     * Get the table model name.
+     *
+     * @return string
+     */
+    public function getModelName()
+    {
+        $tableName = $this->getRawTableName();
+
+        if ($tablePrefix = $this->getConfig()->get(Formatter::CFG_REMOVE_TBL_PREFIX)) {
+            $tableName = preg_replace('/^'.$tablePrefix.'/', '', $tableName);
+        }
+
+        // check if table name is plural --> convert to singular
+        if (
+            !$this->getConfig()->get(Formatter::CFG_SKIP_PLURAL) &&
+            ($tableName != ($singular = Inflector::singularize($tableName)))
+        ) {
+            $tableName = $singular;
+        }
+        return $this->beautify($tableName);
+    }
+
+    /**
      * Get the generated class name.
      *
      * @param bool $base

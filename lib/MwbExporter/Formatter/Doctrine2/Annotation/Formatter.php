@@ -40,6 +40,7 @@ class Formatter extends BaseFormatter
     const CFG_GENERATE_ENTITY_SERIALIZATION  = 'generateEntitySerialization';
     const CFG_GENERATE_EXTENDABLE_ENTITY     = 'generateExtendableEntity';
     const CFG_QUOTE_IDENTIFIER_STRATEGY      = 'quoteIdentifierStrategy';
+    const CFG_REMOVE_TBL_PREFIX                     = 'removeTablePrefix';
 
     const QUOTE_IDENTIFIER_AUTO              = 'auto';
     const QUOTE_IDENTIFIER_ALWAYS            = 'always';
@@ -58,6 +59,7 @@ class Formatter extends BaseFormatter
             static::CFG_QUOTE_IDENTIFIER_STRATEGY       => static::QUOTE_IDENTIFIER_AUTO,
             static::CFG_EXTENDS_CLASS                   => '',
             static::CFG_PROPERTY_TYPEHINT               => false,
+            static::CFG_REMOVE_TBL_PREFIX                   => false,
         ));
         $this->addValidators(array(
             static::CFG_QUOTE_IDENTIFIER_STRATEGY       => new ChoiceValidator(array(

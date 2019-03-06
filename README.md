@@ -140,7 +140,12 @@ Common Setup Options for Doctrine 2.0:
     whose type is a class. E.g. `\DateTime` would be type-hinted but not `object` or `string`.
 
     Default is `false`.
+    
+  * `removeTablePrefix`
 
+    This prefix will be removed from model names.
+
+    Default is `false`.
 #### Model Comment Behavior
 
   * `{d:bundleNamespace}AcmeBundle{/d:bundleNamespace}` (applied to Table)
